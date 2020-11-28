@@ -7,16 +7,16 @@
 
 ### Later
 ### _For every new feature_
-1. **Switch and update local main branch**
+#### 1. Switch and update local main branch
  - Checkout main ```git checkout main```
  - Pull Changes ```git pull```
-2. **Create new branch locally**
+#### 2. Create new branch locally
  - Create feature branch ```git checkout -b <feature_branch>```
-3. **Actual coding starts here**
- 3.1. Adding changes ```git add .```
- 3.2. Commiting changes locally ```git commit -m "my changes"```
- 3.3. Back to step 3.1
-4. **When feature is complete and working you can push your branch to git repository**
+#### 3. Actual coding starts here
+ - Adding changes ```git add .```
+ - Commiting changes locally ```git commit -m "my changes"```
+ - Go back to start of step 3 until feature is **DONE**
+#### 4. When feature is complete and working you can push your branch to git repository
  - Push to remote ```git push origin <feature_branch>```
  - Create pull request on github page
  - Merge if no conflicts
