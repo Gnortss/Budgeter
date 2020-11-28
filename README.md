@@ -3,7 +3,7 @@
 ## Start developing
 
 ### 1st Time
- - Clone ```git clone git@github.com:Gnortss/ehome.git```
+ - Clone ```git clone git@github.com:Gnortss/Budgeter.git```
 
 ### Later
 **For every new feature**
