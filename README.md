@@ -6,7 +6,7 @@
  - Clone ```git clone git@github.com:Gnortss/Budgeter.git```
 
 ### Later
-**For every new feature**
+### _For every new feature_
 #### Switch and update local main branch
  - Checkout main ```git checkout main```
  - Pull Changes ```git pull```
@@ -17,7 +17,7 @@
  2. Commiting changes locally ```git commit -m "my changes"```
  3. Back to step 1
 #### When feature is complete and working you can push your branch to git repository
- - Push to remote ```git push -u origin <feature_branch>```
+ - Push to remote ```git push origin <feature_branch>```
  - Create pull request on github page
  - Merge if no conflicts
  - Switch back to local main branch ```git checkout main```
