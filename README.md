@@ -7,8 +7,8 @@
 
 ### Later
 **For every new feature**
-#### Switch and update local master branch
- - Checkout master ```git checkout master```
+#### Switch and update local main branch
+ - Checkout main ```git checkout main```
  - Pull Changes ```git pull```
 #### Create new branch locally
  - Create feature branch ```git checkout -b <feature_branch>```
@@ -20,3 +20,4 @@
  - Push to remote ```git push -u origin <feature_branch>```
  - Create pull request on github page
  - Merge if no conflicts
+ - Switch back to local main branch ```git checkout main```
