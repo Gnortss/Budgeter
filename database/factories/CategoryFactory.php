@@ -23,7 +23,7 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->lexify('???????'),
-            'description' => $this->faker->paragraphs(rand(2,4),true),
+            'description' => $this->faker->sentence(rand(1,4)),
         ];
     }
 }
