@@ -2,6 +2,12 @@
 
 ## Start developing
 
+## Project ...
+ - ```composer install```
+ - Create .env file
+ - ```php artisan migrate:fresh --seed```
+ - ```php artisan serve```
+
 ### 1st Time
  - Clone ```git clone git@github.com:Gnortss/Budgeter.git```
 
