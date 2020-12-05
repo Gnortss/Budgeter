@@ -27,6 +27,8 @@ class RedirectIfAuthenticated
             }
         }
 
+        //$request->headers->set('accept', 'application/json', true);
+
         return $next($request);
     }
 }

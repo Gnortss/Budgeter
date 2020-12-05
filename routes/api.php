@@ -24,3 +24,5 @@ Route::group(['middleware' => ['auth:sanctum']], function() {
     Route::resource('categories', CategoryController::class)->except(['create','edit']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
+
+
