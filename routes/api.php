@@ -20,12 +20,12 @@ use App\Http\Controllers\AuthController;
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::resource('offers', SpecialOfferController::class);
 
 
 Route::group(['middleware' => ['auth:sanctum']], function() {
     Route::resource('categories', CategoryController::class)->except(['create','edit']);
     Route::resource('coupons', CouponController::class);
-    Route::resource('offers', SpecialOfferController::class);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
 
