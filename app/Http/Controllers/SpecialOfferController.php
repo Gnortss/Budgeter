@@ -50,9 +50,9 @@ class SpecialOfferController extends Controller
      * @param  \App\Models\SpecialOffer  $specialOffer
      * @return \Illuminate\Http\Response
      */
-    public function show(SpecialOffer $specialOffer)
+    public function show($id)
     {
-        return $specialOffer;
+        return SpecialOffer::findOrFail($id);
     }
 
     /**
