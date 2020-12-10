@@ -62,7 +62,7 @@ class SpecialOfferController extends Controller
      * @param  \App\Models\SpecialOffer  $specialOffer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SpecialOffer $specialOffer)
+    public function update(Request $request, $id)
     {
         $validator = \Validator::make($request->all(), [
             'start_date' => 'required',
@@ -74,6 +74,7 @@ class SpecialOfferController extends Controller
             return response()->json($validator->errors(), 422);
         }
         else {
+            $specialOffer = SpecialOffer::findOrFail($id);
             $specialOffer->update($request->all());
 
             return response()->json([
