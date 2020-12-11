@@ -47,7 +47,7 @@ class SpecialOfferController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SpecialOffer  $specialOffer
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -59,7 +59,7 @@ class SpecialOfferController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SpecialOffer  $specialOffer
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
