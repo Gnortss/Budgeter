@@ -32,7 +32,7 @@ class AuthController extends Controller
         return response()->json([
             'message' => 'User created successfully',
             'user' => $user
-        ], 201);
+        ], 200);
     }
 
     public function login(Request $request)
