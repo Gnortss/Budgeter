@@ -71,7 +71,7 @@ class SpecialOfferController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return response()->json($validator->errors());
+            return response()->json($validator->errors(), 422);
         }
         else {
             $specialOffer = SpecialOffer::findOrFail($id);
@@ -80,7 +80,7 @@ class SpecialOfferController extends Controller
             return response()->json([
                 'message' => "Your special offer has been updated successfully",
                 'special_offer'=> $specialOffer
-            ]);
+            ], 201);
         }
     }
 
