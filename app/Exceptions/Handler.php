@@ -40,7 +40,7 @@ class Handler extends ExceptionHandler
 
     public function render($request, Throwable $exception)
     {
-        return response(['error' => $exception->getMessage()], $exception->getCode() ?: 400);
+        return response(['error' => $exception->getMessage()], 400);
     }
 
 }
