@@ -6,6 +6,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\SpecialOfferController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\SavedOfferController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -28,5 +29,6 @@ Route::group(['middleware' => ['auth:sanctum']], function() {
     Route::resource('categories', CategoryController::class)->except(['create','edit']);
     Route::resource('coupons', CouponController::class);
     Route::resource('transactions', TransactionController::class)->except(['update']);
+    Route::resource('saved', SavedOfferController::class)->except(['update']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
