@@ -29,9 +29,12 @@ class AuthController extends Controller
         $user->username = $request->username;
         $user->save();
 
+        $tokenResult = $user->createToken('authToken')->plainTextToken;
+
         return response()->json([
             'message' => 'User created successfully',
-            'user' => $user
+            'user' => $user,
+            'token' => $tokenResult
         ], 200);
     }
 
